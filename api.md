@@ -109,6 +109,7 @@ S - Standard
 E - Extension
 
 Command | O/S/E | Minecraft: Pi | Raspberry Juice | Raspberry Jam Mod | mcapi
+--- | --- | --- | --- | --- |--- 
 world.getBlock | O | Y | Y | Y | Y
 world.setBlock | O | Y | Y | Y | Y
 world.setBlock | O | Y | Y | Y | Y
