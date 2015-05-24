@@ -41,7 +41,7 @@ No all commands are supported in all implementations, see the compatability tabl
 
 ###Official
 
-world.getBlock(x,y,z) --> blockTypeId
+`world.getBlock(x,y,z) --> blockTypeId`
 
 world.setBlock(x,y,z,blockTypeId)
 world.setBlock(x,y,z,blockTypeId,blockData)
