@@ -41,67 +41,66 @@ No all commands are supported in all implementations, see the compatability tabl
 
 ###Official
 
-```world.getBlock(x,y,z) --> blockTypeId```
+    world.getBlock(x,y,z) --> blockTypeId    
 
-```world.setBlock(x,y,z,blockTypeId)```
-```world.setBlock(x,y,z,blockTypeId,blockData)```
+    world.setBlock(x,y,z,blockTypeId)    
+    world.setBlock(x,y,z,blockTypeId,blockData)    
 
-```world.setBlocks(x1,y1,z1,x2,y2,z2,blockTypeId)```
-```world.setBlocks(x1,y1,z1,x2,y2,z2,blockTypeId,blockData)```
+    world.setBlocks(x1,y1,z1,x2,y2,z2,blockTypeId)    
+    world.setBlocks(x1,y1,z1,x2,y2,z2,blockTypeId,blockData)    
 
-```world.getHeight(x,z) --> Integer```
+    world.getHeight(x,z) --> Integer    
 
-```world.checkpoint.save()```
-```world.checkpoint.restore()```
+    world.checkpoint.save()    
+    world.checkpoint.restore()    
 
-```world.setting(KEY,0/1)```
+    world.setting(KEY,0/1)    
 
-```world.getPlayerIds()```
+    world.getPlayerIds()    
 
-```chat.post(message)```
+    chat.post(message)    
 
-```camera.mode.setNormal()```
-```camera.mode.setThirdPerson()```
-```camera.mode.setFixed()```
-```camera.mode.setPos(x,y,z)```
+    camera.mode.setNormal()    
+    camera.mode.setThirdPerson()    
+    camera.mode.setFixed()    
+    camera.mode.setPos(x,y,z)    
 
-```player.getTile() --> x,y,z```
-```player.setTile(x,y,z)```
+    player.getTile() --> x,y,z    
+    player.setTile(x,y,z)    
 
-```player.getPos() --> xf,yf,zf```
-```player.setPos(xf,yf,zf)```
+    player.getPos() --> xf,yf,zf    
+    player.setPos(xf,yf,zf)    
 
-```player.setting(KEY, 0/1)```
+    player.setting(KEY, 0/1)    
 
-```entity.getTile(entityId) --> x,y,z```
-```entity.setTile(entityId,x,y,z)```
+    entity.getTile(entityId) --> x,y,z    
+    entity.setTile(entityId,x,y,z)    
 
-```entity.getPos(entityId) --> xf,yf,zf```
-```entity.setPos(entityId,xf,yf,zf)```
+    entity.getPos(entityId) --> xf,yf,zf    
+    entity.setPos(entityId,xf,yf,zf)    
 
-```events.block.hits() --> [pos,surface,entityId]```
-(pos is x,y,z surface is Integer, entityId is Integer)
+    events.block.hits() --> [pos,surface,entityId]    
 
 ###Standard
 
-```world.getBlocks --> [blockType]```
+    world.getBlocks --> [blockType]    
 
-```world.getPlayerId(name) --> Integer```
+    world.getPlayerId(name) --> Integer    
 
-```player.getDirection() --> xf, yf, zf```
-```player.getRotation() --> Float```
-```player.getPitch() --> Float```
+    player.getDirection() --> xf, yf, zf    
+    player.getRotation() --> Float    
+    player.getPitch() --> Float    
 
-```entity.getDirection(entityId) --> xf, yf, zf```
-```entity.getRotation(entityId) --> Float```
-```entity.getPitch(entityId) --> Float```
+    entity.getDirection(entityId) --> xf, yf, zf    
+    entity.getRotation(entityId) --> Float    
+    entity.getPitch(entityId) --> Float    
 
-```events.chat.posts() --> [entityId,mesage]```
+    events.chat.posts() --> [entityId,mesage]    
 
 ###Extension
 
-```world.spawnEntity(type,x,y,z,tags) --> entityId```
-```world.removeEntity(entityId)```
+    world.spawnEntity(type,x,y,z,tags) --> entityId    
+    world.removeEntity(entityId)    
 
 ##Compatability
 O - Official
