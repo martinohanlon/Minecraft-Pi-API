@@ -5,9 +5,11 @@
 IN PROGRESS
 
 ##Description
-Minecraft: Pi Edition contains a really simple, but surprisingly versatile API that allows programmers to interact with the Minecraft world in real time using code. Since its release functions of tthe api have been migrated to other Minecraft implementations (e.g. Bukkit, Canarymod, Forge) and also extended.
+Minecraft: Pi Edition contains a really simple, but surprisingly versatile API that allows programmers to interact with the Minecraft world in real time using code. 
 
-Its objective is to document the api and be a reference point to ensure consistency.
+Since its release the api has been migrated to other Minecraft implementations (e.g. Bukkit, Canarymod, Forge) as well as being extended
+
+The objective of this repository is to document the api and be a reference point to ensure consistency across the implementation as well as providing a basis of discussion.
 
 This repository:
 * describes the api, its derivatives and its extentions
@@ -19,7 +21,7 @@ This repository:
 Todo - Links to information about the different implementations of API. 
 
 ##Structure
-* (api)[api.md] - documentation which describes the api, its versions
+* [api](api.md) - documentation which describes the api, its versions
   * original documentation
 * python 
   * (api)[python-api.md] - documentation describing the python module
