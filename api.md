@@ -1,17 +1,17 @@
-#Minecraft Pi API
+# Minecraft Pi API
 
 IN PROGRESS
 
-##Description
+## Description
 The Minecraft Pi API is a 'server' based api where a client connects to a server and sends api command via TCP/IP. Each command is a string sent in clear text to the server which then executes that command.
 
 Some of the information presented here is taken from the original (mcpi_protocol_spec.txt)[resources/mcpi_protocol_spec.txt] document which was distributed with Minecraft: Pi Edition
 
-##Implementations
+## Implementations
 
 TODO - descriptions of the implementations
 
-##Protocol
+## Protocol
 The mcpi-protocol enables an external process (program) to interact with a running instance of Minecraft Pi API.
 
 The protocol can easily be implemented and used from any programming language that has network socket support. 
@@ -19,16 +19,16 @@ The protocol can easily be implemented and used from any programming language th
 * Tcp-socket, port 4711 (in some implementations this can be changed)
 * Commands are clear text lines (ASCII, LF terminated)
 
-##Definitions
+## Definitions
 x,y,z -- vector of three integers.
 xf,yf,zf -- vector of three floats.
 blockTypeId -- integer. 0 is air.
 blockData -- integer 0-15. Block data beyond the type, for example wool color.
 
-##Co-ordinate System
+## Co-ordinate System
 Most coordinates are in the form of a three integer vector (x,y,z) which address a specific tile in the game world. (0,0,0) is the spawn point sea level. (X,Z) is the ground plane and Y is towards the sky.
 
-##Commands
+## Commands
 
 Commands are categorised by their status as:
 * Official - part of the Minecraft: Pi Edition api and officially support by Mojang
@@ -39,7 +39,7 @@ If changes are made to the official implementation which supercede standard or e
 
 No all commands are supported in all implementations, see the compatability table below.
 
-###Official
+### Official
 
     world.getBlock(x,y,z) --> blockTypeId    
 
@@ -81,7 +81,7 @@ No all commands are supported in all implementations, see the compatability tabl
 
     events.block.hits() --> [pos,surface,entityId]    
 
-###Standard
+### Standard
 
     world.getBlocks --> [blockType]    
 
@@ -97,12 +97,12 @@ No all commands are supported in all implementations, see the compatability tabl
 
     events.chat.posts() --> [entityId,mesage]    
 
-###Extension
+### Extension
 
     world.spawnEntity(type,x,y,z,tags) --> entityId    
     world.removeEntity(entityId)    
 
-##Compatability
+## Compatability
 O - Official
 S - Standard
 E - Extension

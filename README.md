@@ -1,10 +1,10 @@
-#Minecraft Pi API
-##Martin O'Hanlon (martin@ohanlonweb.com)
-##http://www.stuffaboutcode.com
+# Minecraft Pi API
+## Martin O'Hanlon (martin@ohanlonweb.com)
+## http://www.stuffaboutcode.com
 
 IN PROGRESS
 
-##Description
+## Description
 Minecraft: Pi Edition contains a really simple, but surprisingly versatile API that allows programmers to interact with the Minecraft world in real time using code. 
 
 Since its release the api has been migrated to other Minecraft implementations (e.g. Bukkit, Canarymod, Forge) as well as being extended
@@ -16,11 +16,11 @@ This repository:
 * provides information about compatibility across versions
 * holds the language specific (e.g. python, java) modules which allow programmers to access the api and its extensions
 
-##Implementations
+## Implementations
 
 Todo - Links to information about the different implementations of API. 
 
-##Structure
+## Structure
 * [api](api.md) - documentation which describes the api, its versions
   * original documentation
 * python 
@@ -33,8 +33,8 @@ Todo - Links to information about the different implementations of API.
   * minecraft-pi-edition-LICENSE.txt - original minecraft pi edition LICENSE
   * others...
 
-##Contributors
+## Contributors
 * (Martin O'Hanlon)[https://github.com/martinohanlon]
 
-##Version history
+## Version history
 * 0.1 - in progress
